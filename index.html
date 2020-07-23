@@ -1,0 +1,155 @@
+<html>
+<body>
+    
+
+    
+    
+    
+    
+    
+    <!--
+//task1   <a href="#" onclick="alert('Wellcome to JS')">Click Me</a> 
+
+    
+    //tasks2
+    
+
+    <img src="mobile.jpg" alt="Image" on onclick="alert('This is Iphone company Mobile')">
+    
+    
+    
+    
+    
+    
+    
+    !-->
+    
+    
+    <!--
+<form >
+    <table id="dsTable">
+  <tbody>
+    <tr>
+      <td>Index</td>
+      <td>Name</td>
+      <td>Class</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>Afaque</td>
+      <td>12</td>
+      
+      <td><input type="button" value="Delete" onclick="deleteRow(this)"/></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Ahmed</td>
+      <td>11</td>
+      
+      <td><input type="button" value="Delete" onclick="deleteRow(this)"/></td>
+    </tr>
+  </tbody>
+</table>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+    
+    
+    <img src="mobile.jpg" onmouseover="src='car.jpg'" onmouseout="src='mobile.jpg'" >
+    
+    
+    
+    <br><br><br>
+    
+    <center>
+        
+Name<input id="name" type="text">    
+Password<input id="pas" type="password">
+        Email<input id="email" type="email">
+        <button onclick="submit()">Submit</button>
+    
+    <div id="txt"></div>
+        
+        
+        
+        <p id="trt"> I am afaque ahmed from a village of  <a href="javascript:void(0)" onclick="read()">read more</a>  </p>
+        -->
+<form>
+    <table id = "tab" >
+        <tbody>
+        <tr>
+            <td>
+    Name<input type="text"></td>
+<td> FName<input type="text"></td>
+
+        <td>  Surname<input type="text"></td>  
+            <td>
+    Email<input type="text"></td>
+<td>    Qualification <input type="text">
+    
+            </td>
+        
+            
+        
+        <td><input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+</td>
+        <td><button value="delete"  onclick="deleteRow(this)">Delete</button></td>
+        
+        </tr>
+   
+    
+    <br>
+    
+    <tr>
+            <td>
+    Name<input type="text"></td>
+<td> FName<input type="text"></td>
+
+        <td>  Surname<input type="text"></td>  
+            <td>
+    Email<input type="text"></td>
+<td>    Qualification <input type="text">
+    
+            </td>
+        
+        <td><input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+</td>
+        <td><input type="button" value="Delete" onclick="deleteRow(this)"></button></td>
+        
+        </tr>
+
+    
+    </tbody>
+    </table> 
+    
+        </form>
+
+
+
+
+
+
+
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+</head>
+<body>
+
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
+<p>Click the button to see the counter increase.</p>
+
+        </body>
+<script src="app.js"s></script>
+    
+    
+</html>
